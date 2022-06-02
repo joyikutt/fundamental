@@ -1,21 +1,19 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Name: Prabha Joyikutty
+ID: 991533645
  */
 package cardtrickice1;
 
-/** define card value and suits
- * 
+/**
+ * define card value and suits
  *
- * @author sivagamasrinivasan
  */
-public class Card 
-{
+public class Card {
+
     private int value;
     private String suits; //encapsulation
     //constant
-    public static final String [] SUITS = { "diamonds","clubs","spades","hearts"};
+    public static final String[] SUITS = {"diamonds", "clubs", "spades", "hearts"};
 
     /**
      * @return the value
@@ -44,8 +42,17 @@ public class Card
     public void setSuits(String suits) {
         this.suits = suits;
     }
-   //number
-    
-    //method for suits
-    
+    //number
+
+    void Card(int i) {
+        Card c1 = new Card();
+        c1.setValue(1 + (int) (Math.random() * 13));
+
+        //method for suits
+        c1.setSuits(suits);
+
+        Card[] magicHand = null;
+
+        magicHand[i] = c1;
+    }
 }
